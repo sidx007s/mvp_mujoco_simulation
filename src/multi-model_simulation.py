@@ -5,8 +5,7 @@ import xml.etree.ElementTree as ET
 import time
 import argparse
 from motion_functions import circular_motion, clifford_attractor
-#import pandas as pd
-#import json
+import pandas as pd
 import copy
 from get_coordinates import *
 class MuJocoSimulation:

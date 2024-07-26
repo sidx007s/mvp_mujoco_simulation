@@ -41,7 +41,7 @@ This branch serves as preliminary solution for generating an xml file combining 
 2. Navigate to the project directory:
 
    ```bash
-   docker compose up -d   
+   docker compose up --build   
    ```
    ```bash
    docker exec -it mvp_simulation bash   

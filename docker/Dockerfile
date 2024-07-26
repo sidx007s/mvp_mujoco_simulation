@@ -1,4 +1,4 @@
-FROM python:slim-bookworm
+FROM python:3.10-slim
 
 SHELL ["/bin/bash", "-c", "-o", "pipefail"]
 
@@ -10,4 +10,4 @@ COPY ./src /sim_ws/src
 COPY ./requirements.txt /sim_ws/requirements.txt
 WORKDIR /sim_ws
 
-RUN pip install -r /sim_ws/requirements.txt
+RUN pip install --no-cache-dir -r /sim_ws/requirements.txt
